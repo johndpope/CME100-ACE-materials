@@ -130,8 +130,8 @@ So, we achieve maximums at $(1,\sqrt{2})$ and $(1, - \sqrt{2})$.
 \par \textit{Note 2:} we can express the distance $D = f(x,y) = f(h(x,y))$ where $f(\cdot)$ is an invertible increasing function. Because $f(\cdot)$ is invertible and increasing, we actually could of discarded the outer function and optimized $h(x,y)$. In this problem, this would be optimization $x^2 + y^2$ instead of $\sqrt{x^2 + y^2}$. The answer is the same, but the math is noticeably simpler when we use the alternative objective. This problem is a good example of how exploiting a problem's structure can make your life easier in solving optimization problems. 
 
 \subsection{Maximizing a product} Find the largest product the positive numbers $x$, $y$, and $z$ can have if $x^2 + y^2 + z^2 = 16$.
-\par \textbf{Solution:} This problem is a bit tricky because it is not entirely clear what the constraints are. The objective is obviously $xyz$ and we have the one constraint $x^2 + y^2 + z^2 = 10$, but we also have the constraints $x,y,z \geq 0$. However, we need not include these in the Lagrangian if we are sure to only consider positive solutions when solving for $x,y,z$. From here, we can form the Lagrangian:
-\[ \mathcal{L} = xyz - \lambda(10 - x^2 - y^2 - z^2)  \]
+\par \textbf{Solution:} This problem is a bit tricky because it is not entirely clear what the constraints are. The objective is obviously $xyz$ and we have the one constraint $x^2 + y^2 + z^2 = 16$, but we also have the constraints $x,y,z \geq 0$. However, we need not include these in the Lagrangian if we are sure to only consider positive solutions when solving for $x,y,z$. From here, we can form the Lagrangian:
+\[ \mathcal{L} = xyz - \lambda(16 - x^2 - y^2 - z^2)  \]
 Then, taking partial derivatives with respect to the variables:
 \begin{align*}
 \frac{\partial \mathcal{L}}{\partial x} &= yz + 2 \lambda x = 0\\
